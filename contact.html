@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Book Cleaning | CleanPro Services</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">🧹 CleanPro Services</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="services.html">Services ▼</a>
+                        <div class="dropdown-menu">
+                            <a href="services.html#residential">Residential Cleaning</a>
+                            <a href="services.html#commercial">Commercial Cleaning</a>
+                            <a href="services.html#deep">Deep Cleaning</a>
+                            <a href="services.html#carpet">Carpet Cleaning</a>
+                            <a href="services.html#tenancy">End of Tenancy</a>
+                        </div>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="sticky-btn">Book Now</a></li>
+                    <li><button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us & Book Your Cleaning</h2>
+
+
+                <div class="contact-content">
+                    <!-- Left Side: Contact Info -->
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p style="margin-bottom: 30px;">Have questions? Need a custom quote? Our friendly team is here to help!</p>
+
+                        <div class="contact-details">
+                            <div style="margin-bottom: 20px;">
+                                <strong style="color: #0066cc;">📱 Phone</strong>
+                                <p>(555) 123-4567</p>
+                                <small>Mon-Fri: 8am-6pm | Sat-Sun: 9am-4pm</small>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <strong style="color: #0066cc;">📧 Email</strong>
+                                <p><a href="mailto:info@cleanproservices.com" style="color: #0066cc; text-decoration: none;">info@cleanproservices.com</a></p>
+                                <small>Response within 2 hours during business hours</small>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <strong style="color: #0066cc;">💬 WhatsApp</strong>
+                                <p>(555) 123-4567</p>
+                                <small>Quick messages and inquiries</small>
+                            </div>
+
+                            <div style="margin-bottom: 20px;">
+                                <strong style="color: #0066cc;">📍 Address</strong>
+                                <p>123 Clean Street<br>Sparkle City, SC 12345</p>
+                                <small>Serving all surrounding areas</small>
+                            </div>
+                        </div>
+
+                        <div style="background-color: #f0f5ff; padding: 20px; border-radius: 8px; margin-top: 30px; border-left: 4px solid #0066cc;">
+                            <h4 style="color: #0066cc; margin-bottom: 12px;">Business Hours</h4>
+                            <p style="margin: 5px 0; color: #555;"><strong>Monday - Friday</strong><br>8:00 AM - 6:00 PM</p>
+                            <p style="margin: 5px 0; color: #555;"><strong>Saturday - Sunday</strong><br>9:00 AM - 4:00 PM</p>
+                            <p style="margin-top: 15px; color: #666; font-size: 0.95rem;"><em>Emergency services available upon request</em></p>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Booking Form -->
+                    <div class="contact-form">
+                        <h3>Book Your Cleaning</h3>
+                        <p style="margin-bottom: 20px; color: #666;">Fill out the form below and we'll contact you within 2 hours to confirm your booking.</p>
+
+                        <form id="bookingForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="service">Service Type *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">-- Select a Service --</option>
+                                    <option value="residential">Residential Cleaning</option>
+                                    <option value="commercial">Commercial Cleaning</option>
+                                    <option value="deep">Deep Cleaning</option>
+                                    <option value="carpet">Carpet Cleaning</option>
+                                    <option value="windows">Window Cleaning</option>
+                                    <option value="tenancy">End of Tenancy</option>
+                                    <option value="other">Other Service</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Preferred Time *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">-- Select Time --</option>
+                                    <option value="8am">8:00 AM</option>
+                                    <option value="9am">9:00 AM</option>
+                                    <option value="10am">10:00 AM</option>
+                                    <option value="11am">11:00 AM</option>
+                                    <option value="12pm">12:00 PM</option>
+                                    <option value="1pm">1:00 PM</option>
+                                    <option value="2pm">2:00 PM</option>
+                                    <option value="3pm">3:00 PM</option>
+                                    <option value="4pm">4:00 PM</option>
+                                    <option value="5pm">5:00 PM</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="size">Property Size *</label>
+                                <select id="size" name="size" required>
+                                    <option value="">-- Select Size --</option>
+                                    <option value="1-bed">1-Bed Apartment</option>
+                                    <option value="2-bed">2-Bed Home</option>
+                                    <option value="3-bed">3-Bed Home</option>
+                                    <option value="4plus">4+ Bed Home</option>
+                                    <option value="office">Office/Commercial</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Special Requests (Optional)</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Any specific areas or instructions?"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn" style="width: 100%;">Book Your Cleaning</button>
+                            <p style="font-size: 0.9rem; color: #999; margin-top: 12px; text-align: center;">*Required fields. We'll confirm your booking via email and phone.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instant Quote Calculator -->
+        <section class="trust-section">
+            <div class="container">
+                <h3 class="section-title">Get an Instant Quote</h3>
+                <p style="text-align: center; color: #666; margin-bottom: 30px;">Use our quick calculator to get an estimate for your cleaning service</p>
+                
+                <div style="max-width: 600px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 8px;">
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: bold; color: #333; display: block; margin-bottom: 8px;">Select Service:</label>
+                        <select id="quoteService" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                            <option value="residential">Residential Cleaning - €80</option>
+                            <option value="deep">Deep Cleaning - €150</option>
+                            <option value="office">Office Cleaning - Custom</option>
+                            <option value="carpet">Carpet Cleaning - €60</option>
+                            <option value="windows">Window Cleaning - €40</option>
+                        </select>
+                    </div>
+                    
+                    <div style="padding: 20px; background-color: #f0f5ff; border-radius: 8px; text-align: center;">
+                        <p style="color: #666; margin-bottom: 10px;">Estimated Cost:</p>
+                        <p style="font-size: 2rem; color: #00cc66; font-weight: bold;">€80 - €150</p>
+                        <p style="color: #666; margin-top: 10px;"><small>*Final quote depends on property size and specific requirements</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Contact CleanPro -->
+        <section class="services-preview">
+            <div class="container">
+                <h3 class="section-title">Why Choose Us?</h3>
+                <div class="service-cards">
+                    <div class="card">
+                        <h4>✓ Fast Response</h4>
+                        <p>We respond to inquiries within 2 hours during business hours</p>
+                    </div>
+                    <div class="card">
+                        <h4>✓ Free Quotes</h4>
+                        <p>No obligation. Get a detailed, transparent quote before booking</p>
+                    </div>
+                    <div class="card">
+                        <h4>✓ Easy Booking</h4>
+                        <p>Simple online form or call us directly for instant confirmation</p>
+                    </div>
+                    <div class="card">
+                        <h4>✓ Flexible Scheduling</h4>
+                        <p>Book on your schedule - weekdays, weekends, early morning or evening</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Ready to Book Your Cleaning?</h2>
+                <p>Get started in minutes with our easy online booking system.</p>
+                <a href="#bookingForm" class="btn" style="margin-right: 12px;">Book Now</a>
+                <a href="tel:5551234567" class="btn btn-secondary">Call Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h4>About CleanPro</h4>
+                <a href="about.html">About Us</a>
+                <a href="blog.html">Blog</a>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <a href="services.html#residential">Residential</a>
+                <a href="services.html#commercial">Commercial</a>
+                <a href="services.html#deep">Deep Cleaning</a>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html">Book Now</a>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CleanPro Services. All rights reserved. | Fully Insured & Certified</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
