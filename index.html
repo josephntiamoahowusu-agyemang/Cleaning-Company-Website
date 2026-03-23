@@ -11,7 +11,12 @@
         <nav>
             <div class="container">
                 <h1 class="logo">🧹 CleanPro Services</h1>
-                <ul class="nav-links">
+                <button class="menu-toggle" id="menuToggle" title="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li class="nav-dropdown">
                         <a href="services.html">Services ▼</a>
@@ -27,10 +32,10 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html" class="sticky-btn">Book Now</a></li>
-                    <li><button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
+                <a href="contact.html" class="sticky-btn">Book Now</a>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button>
             </div>
         </nav>
     </header>
@@ -46,7 +51,9 @@
                         <a href="contact.html" class="btn">Get a Free Quote</a>
                         <a href="contact.html" class="btn btn-secondary">Book Now</a>
                     </div>
-
+                    <div class="hero-image">
+                        <img src="Images/Banner.jpg" alt="Professional cleaning services in action">
+                    </div>
                 </div>
             </div>
         </section>
@@ -134,13 +141,13 @@
                 <div class="service-cards">
                     <div class="card">
                         <h4>1-Bed Apartment</h4>
-                        <p style="color: #00cc66; font-size: 1.8rem; font-weight: bold;">€80</p>
+                        <p style="color: #00cc66; font-size: 1.8rem; font-weight: bold;">₵80</p>
                         <p>2-3 hours of professional cleaning</p>
                         <a href="pricing.html" class="btn">View All Pricing</a>
                     </div>
                     <div class="card">
                         <h4>Deep Cleaning</h4>
-                        <p style="color: #00cc66; font-size: 1.8rem; font-weight: bold;">€150</p>
+                        <p style="color: #00cc66; font-size: 1.8rem; font-weight: bold;">₵150</p>
                         <p>Complete home refresh, includes all areas</p>
                         <a href="pricing.html" class="btn">View All Pricing</a>
                     </div>
@@ -154,18 +161,28 @@
             </div>
         </section>
 
-        <!-- Before and After -->
-        <section class="trust-section">
+        <!-- Before and After Gallery -->
+        <section class="gallery-section">
             <div class="container">
-                <h3 class="section-title">Before & After</h3>
-                <div class="service-cards">
-                    <div class="card">
-                        <h4>Before</h4>
-                        <p>Cluttered and dusty kitchen</p>
+                <h3 class="section-title">Before & After Gallery</h3>
+                <div class="gallery-showcase">
+                    <div class="showcase-item">
+                        <div class="showcase-box">
+                            <img src="Images/Before and After images 1.jpg" alt="Before and after residential cleaning transformation">
+                            <div class="showcase-label">Residential Transformation</div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h4>After</h4>
-                        <p>Spotless and organized space</p>
+                    <div class="showcase-item">
+                        <div class="showcase-box">
+                            <img src="Images/Before and after image 2.jpg" alt="Before and after deep cleaning comparison">
+                            <div class="showcase-label">Deep Cleaning Results</div>
+                        </div>
+                    </div>
+                    <div class="showcase-item">
+                        <div class="showcase-box">
+                            <img src="Images/Before and after image 3.jpg" alt="Before and after commercial space cleaning">
+                            <div class="showcase-label">Commercial Excellence</div>
+                        </div>
                     </div>
                 </div>
             </div>

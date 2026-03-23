@@ -3,22 +3,27 @@ function initTheming() {
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
     
+    if (!themeToggle) {
+        console.error('Theme toggle button not found');
+        return;
+    }
+    
     // Check for saved theme preference or default to light mode
     const currentTheme = localStorage.getItem('theme') || 'light';
     html.setAttribute('data-theme', currentTheme);
     updateThemeButton(currentTheme);
+    console.log('Theme initialized:', currentTheme);
     
     // Theme toggle click handler
-    if (themeToggle) {
-        themeToggle.addEventListener('click', function() {
-            const theme = html.getAttribute('data-theme');
-            const newTheme = theme === 'light' ? 'dark' : 'light';
-            
-            html.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeButton(newTheme);
-        });
-    }
+    themeToggle.addEventListener('click', function() {
+        const theme = html.getAttribute('data-theme');
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+        
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeButton(newTheme);
+        console.log('Theme switched to:', newTheme);
+    });
 }
 
 function updateThemeButton(theme) {
@@ -42,6 +47,35 @@ function updateThemeButton(theme) {
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize theming first
     initTheming();
+    
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        
+        // Close menu when a link is clicked
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('nav')) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            }
+        });
+    }
+    
     const quoteForm = document.getElementById('quoteForm');
     if (quoteForm) {
         quoteForm.addEventListener('submit', function(e) {
@@ -79,8 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Smooth scrolling for navigation links
-    const navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(link => {
+    const navAnchors = document.querySelectorAll('.nav-links a');
+    navAnchors.forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
             if (href.startsWith('#')) {

@@ -11,7 +11,12 @@
         <nav>
             <div class="container">
                 <h1 class="logo">🧹 CleanPro Services</h1>
-                <ul class="nav-links">
+                <button class="menu-toggle" id="menuToggle" title="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li class="nav-dropdown">
                         <a href="services.html">Services ▼</a>
@@ -27,10 +32,10 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html" class="sticky-btn">Book Now</a></li>
-                    <li><button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
+                <a href="contact.html" class="sticky-btn">Book Now</a>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button>
             </div>
         </nav>
     </header>
@@ -109,25 +114,27 @@
         </section>
 
         <!-- Before and After -->
-        <section class="trust-section">
+        <section class="gallery-section">
             <div class="container">
                 <h3 class="section-title">Before & After Gallery</h3>
-                <div class="service-cards">
-                    <div class="card">
-                        <h4>Before</h4>
-                        <p>Cluttered kitchen before service</p>
+                <div class="gallery-showcase">
+                    <div class="showcase-item">
+                        <div class="showcase-box">
+                            <img src="Images/Before and After images 1.jpg" alt="Before and after residential cleaning">
+                            <div class="showcase-label">Residential Transformation</div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h4>After</h4>
-                        <p>Spotless and organized</p>
+                    <div class="showcase-item">
+                        <div class="showcase-box">
+                            <img src="Images/Before and after image 2.jpg" alt="Before and after deep cleaning">
+                            <div class="showcase-label">Deep Cleaning Results</div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h4>Before</h4>
-                        <p>Bathroom before deep clean</p>
-                    </div>
-                    <div class="card">
-                        <h4>After</h4>
-                        <p>Sparkling and fresh</p>
+                    <div class="showcase-item">
+                        <div class="showcase-box">
+                            <img src="Images/Before and after image 3.jpg" alt="Before and after commercial cleaning">
+                            <div class="showcase-label">Commercial Excellence</div>
+                        </div>
                     </div>
                 </div>
             </div>

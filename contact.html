@@ -11,7 +11,12 @@
         <nav>
             <div class="container">
                 <h1 class="logo">🧹 CleanPro Services</h1>
-                <ul class="nav-links">
+                <button class="menu-toggle" id="menuToggle" title="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li class="nav-dropdown">
                         <a href="services.html">Services ▼</a>
@@ -27,10 +32,10 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html" class="sticky-btn">Book Now</a></li>
-                    <li><button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
+                <a href="contact.html" class="sticky-btn">Book Now</a>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button>
             </div>
         </nav>
     </header>
@@ -173,17 +178,17 @@
                     <div style="margin-bottom: 20px;">
                         <label style="font-weight: bold; color: #333; display: block; margin-bottom: 8px;">Select Service:</label>
                         <select id="quoteService" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
-                            <option value="residential">Residential Cleaning - €80</option>
-                            <option value="deep">Deep Cleaning - €150</option>
+                            <option value="residential">Residential Cleaning - ₵80</option>
+                            <option value="deep">Deep Cleaning - ₵150</option>
                             <option value="office">Office Cleaning - Custom</option>
-                            <option value="carpet">Carpet Cleaning - €60</option>
-                            <option value="windows">Window Cleaning - €40</option>
+                            <option value="carpet">Carpet Cleaning - ₵60</option>
+                            <option value="windows">Window Cleaning - ₵40</option>
                         </select>
                     </div>
                     
                     <div style="padding: 20px; background-color: #f0f5ff; border-radius: 8px; text-align: center;">
                         <p style="color: #666; margin-bottom: 10px;">Estimated Cost:</p>
-                        <p style="font-size: 2rem; color: #00cc66; font-weight: bold;">€80 - €150</p>
+                        <p style="font-size: 2rem; color: #00cc66; font-weight: bold;">₵80 - ₵150</p>
                         <p style="color: #666; margin-top: 10px;"><small>*Final quote depends on property size and specific requirements</small></p>
                     </div>
                 </div>
@@ -224,6 +229,31 @@
             </div>
         </section>
     </main>
+
+    <!-- Success Modal Popup -->
+    <div id="successModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>✓ Booking Confirmed!</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-message">Thank you! Your cleaning service has been successfully booked.</p>
+                <div class="booking-details">
+                    <p><strong>What's Next?</strong></p>
+                    <ul>
+                        <li>✓ You'll receive a confirmation email shortly</li>
+                        <li>✓ We'll contact you within 2 hours to confirm details</li>
+                        <li>✓ Track your booking status anytime</li>
+                    </ul>
+                </div>
+                <p class="modal-footer">A confirmation email has been sent to <span id="confirmedEmail"></span></p>
+            </div>
+            <div class="modal-actions">
+                <button class="btn" id="modalButton" style="width: 100%;">Return to Home</button>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
