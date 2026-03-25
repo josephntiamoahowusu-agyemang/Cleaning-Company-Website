@@ -44,13 +44,21 @@
         <section class="pricing">
             <div class="container">
                 <h2>Simple, Transparent Pricing</h2>
-                <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 40px;">We offer flexible pricing options for all budgets. All prices include professional supplies and equipment.</p>
+                <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 20px;">We offer flexible pricing options for all budgets. All prices include professional supplies and equipment.</p>
+                
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <p style="font-weight: bold; margin-bottom: 10px;">Select Currency:</p>
+                    <button class="currency-btn" data-currency="EUR" style="margin: 5px;">€ Euro</button>
+                    <button class="currency-btn" data-currency="GHS" style="margin: 5px;">₵ Ghana Cedi</button>
+                    <button class="currency-btn" data-currency="USD" style="margin: 5px;">$ US Dollar</button>
+                    <button class="currency-btn" data-currency="GBP" style="margin: 5px;">£ British Pound</button>
+                </div>
 
                 <h3 class="section-title">Residential Cleaning</h3>
                 <div class="pricing-cards">
                     <div class="pricing-card">
                         <h3>1-Bed Apartment</h3>
-                        <div class="price">₵80</div>
+                        <div class="price" data-price-key="residential1bed">€10</div>
                         <ul>
                             <li>Complete home cleaning</li>
                             <li>2-3 hours of work</li>
@@ -62,7 +70,7 @@
 
                     <div class="pricing-card">
                         <h3>2-Bed House</h3>
-                        <div class="price">₵120</div>
+                        <div class="price" data-price-key="residential2bed">€16</div>
                         <ul>
                             <li>Complete home cleaning</li>
                             <li>4-5 hours of work</li>
@@ -74,7 +82,7 @@
 
                     <div class="pricing-card">
                         <h3>3+ Bed Home</h3>
-                        <div class="price">₵160+</div>
+                        <div class="price" data-price-key="residential3bed">€21+</div>
                         <ul>
                             <li>Complete home cleaning</li>
                             <li>5-6 hours of work</li>
@@ -89,7 +97,7 @@
                 <div class="pricing-cards">
                     <div class="pricing-card">
                         <h3>Deep Clean</h3>
-                        <div class="price">₵150</div>
+                        <div class="price" data-price-key="deepClean">€20</div>
                         <ul>
                             <li>Behind furniture cleaning</li>
                             <li>Inside appliances</li>
@@ -101,7 +109,7 @@
 
                     <div class="pricing-card">
                         <h3>Move-In/Move-Out</h3>
-                        <div class="price">₵200</div>
+                        <div class="price" data-price-key="moveInOut">€27</div>
                         <ul>
                             <li>Complete property cleaning</li>
                             <li>Oven & fridge cleaning</li>
@@ -113,7 +121,7 @@
 
                     <div class="pricing-card">
                         <h3>Post Construction</h3>
-                        <div class="price">₵250</div>
+                        <div class="price" data-price-key="postConstruction">€33</div>
                         <ul>
                             <li>Dust & debris removal</li>
                             <li>All surfaces cleaned</li>
@@ -167,7 +175,7 @@
                 <div class="pricing-cards">
                     <div class="pricing-card">
                         <h3>Carpet Cleaning</h3>
-                        <div class="price">₵60-80</div>
+                        <div class="price" data-price-key="carpetCleaning">€9</div>
                         <ul>
                             <li>Professional shampooing</li>
                             <li>Stain removal</li>
@@ -179,7 +187,7 @@
 
                     <div class="pricing-card">
                         <h3>Window Cleaning</h3>
-                        <div class="price">₵40-60</div>
+                        <div class="price" data-price-key="windowCleaning">€7</div>
                         <ul>
                             <li>Interior & exterior</li>
                             <li>Frame cleaning</li>
